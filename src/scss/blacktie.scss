@@ -1,0 +1,80 @@
+$color_a1: #76b900;
+$color_b1: #dbf6a8;
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-font-smoothing:antialiased;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-size: 11pt;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Exo 2', sans-serif;
+}
+a {
+    color: $color_a1;
+}
+
+header {
+    background: #111;
+    padding: 0.5em;
+    color: #e1e1e1;
+    & h1 {
+        margin: 0;
+        font-size: 14pt;
+        float: left;
+    }
+    & p {
+        float: left;
+        margin: 0;
+        padding-left: 0.5em;
+        padding-top: 0.4em;
+        font-size: 10pt;
+        font-weight: 400;
+    }
+}
+.main {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.client_ip {
+    display: block;
+    max-width: 640px;
+    background: $color_b1;
+    margin: 0.3em auto;
+    padding: 0.3em;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid $color_a1;
+}
+.client_ip_text {
+    font-weight: bold;
+    margin: 0.5em 0 0 0;
+}
+
+
+
+
+.tt_cap {
+    text-transform: capitalize;   
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

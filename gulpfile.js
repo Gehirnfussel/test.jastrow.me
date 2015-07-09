@@ -28,7 +28,7 @@ gulp.task('styles', function() {var onError = function(err) {
 
         this.emit('end');
     };
-    gulp.src('./src/scss/main.scss')
+    gulp.src('./src/scss/blacktie.scss')
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer('last 2 version', 'IE 9', 'safari 5', 'Firefox ESR', 'opera 12.1', 'ios 6', 'android 4', 'BlackBerry 10'))
