@@ -94,6 +94,7 @@ $ua = useragent_decode($client_useragent);
                         } else {
                             echo $ua['agent']." ".$ua['agent_version']." (".$ua['engine']." ".$ua['engine_version'].")";
                         }
+                        ?>
                         </td>
                     </tr>
                 </table>
