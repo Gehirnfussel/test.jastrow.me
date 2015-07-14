@@ -26,7 +26,6 @@
 		);
 
 		$engines = array(
-			'edge',
 			'webkit',
 			'gecko',
 			'trident',
@@ -72,7 +71,7 @@
 		$os = array(
 			'windows nt 5.1'		=> array('Windows', 'XP'),
 			'windows nt 5.2'		=> array('Windows', 'XP (x64)'),
-			'windows nt 6.0'		=> array('Windows', 'vista'),
+			'windows nt 6.0'		=> array('Windows', 'Vista'),
 			'windows nt 6.1'		=> array('Windows', '7'),
 			'windows nt 6.2'		=> array('Windows', '8'),
 			'windows nt 6.3'		=> array('Windows', '8.1'),
