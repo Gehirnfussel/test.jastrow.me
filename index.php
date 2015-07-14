@@ -87,7 +87,14 @@ $ua = useragent_decode($client_useragent);
                     </tr>
                     <tr>
                         <td>Browser:</td>
-                        <td class="tt_cap"><?= $ua['agent']." ".$ua['agent_version'] ?> (<?= $ua['engine']." ".$ua['engine_version'] ?>)</td>
+                        <td class="tt_cap">
+                        <?php
+                        if ($ua['agent']." ".$ua['agent_version'] == $ua['engine']." ".$ua['engine_version']) {
+                            echo $ua['agent']." ".$ua['agent_version'];
+                        } else {
+                            echo $ua['agent']." ".$ua['agent_version']." (".$ua['engine']." ".$ua['engine_version'].")";
+                        }
+                        </td>
                     </tr>
                 </table>
             </article>
