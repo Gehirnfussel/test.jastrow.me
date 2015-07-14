@@ -51,42 +51,47 @@ $ua = useragent_decode($client_useragent);
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ConnectionTest</title>
-    <meta name="description" content="Check for your WAN IP and other browser/server variables." />
+    <title>StarterPage</title>
+    <meta name="description" content="StarterPage by Jan Jastrow - for personal use only." />
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link type="text/css" rel="stylesheet" href="css/blacktie.css" />
     <link href='http://fonts.googleapis.com/css?family=Exo+2:700|Titillium+Web:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header class="clearfix">
-        <h1>Connection Test</h1>
-        <p>by Schwerkraftlabor</p>
-    </header>
-    <div class="main" rel="main">
-        <article class="client_ip_block">
-            <p class="client_ip_text">Your public IP:</p>
-            <p class="client_ip"><?= $client_ip ?></p>
-        </article>
-        <article class="client_data_block">
-            <table>
-                <tr>
-                    <td>OS:</td>
-                    <td><?= $ua['os']." ".$ua['os_version'] ?></td>
-                </tr>
-                <tr>
-                    <td>Browser:</td>
-                    <td><span class="tt_cap"><?= $ua['agent']." ".$ua['agent_version'] ?></span></td>
-                </tr>
-                <tr>
-                    <td>Engine:</td>
-                    <td><span class="tt_cap"><?= $ua['engine']." ".$ua['engine_version'] ?></span></td>
-                </tr>
-            </table>
-        </article>
-        <p>Click <a href="index.php">here</a> to reload the page.</p>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Show IP</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" title="Menu"></label>
+    <div class="wrapper">
+        <header>
+            <h1>StarterPage</h1>
+        </header>
+        <div class="main" rel="main">
+            <article class="client_ip_block">
+                <p class="client_ip_text">Your public IP:</p>
+                <p class="client_ip"><?= $client_ip ?></p>
+            </article>
+            <article class="client_data_block">
+                <table>
+                    <tr>
+                        <td>OS:</td>
+                        <td><?= $ua['os']." ".$ua['os_version'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Browser:</td>
+                        <td class="tt_cap"><?= $ua['agent']." ".$ua['agent_version'] ?> (<?= $ua['engine']." ".$ua['engine_version'] ?>)</td>
+                    </tr>
+                </table>
+            </article>
+        </div>
     </div>
-    <footer></footer>
 </body>
 </html>
