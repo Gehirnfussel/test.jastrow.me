@@ -110,6 +110,20 @@ header {
 }
 
 
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-top: 1px solid #f3f3f3;
+    p {
+        margin: 0.5em auto;
+        font-size: 9pt;
+        text-align: center;
+    }
+}
+
+
 
 /*
     Extras
