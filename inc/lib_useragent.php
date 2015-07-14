@@ -13,6 +13,7 @@
 		#
 
 		$agents = array(
+			'edge',
 			'chrome',
 			'safari',
 			'konqueror',
@@ -25,6 +26,7 @@
 		);
 
 		$engines = array(
+			'edge',
 			'webkit',
 			'gecko',
 			'trident',
@@ -74,6 +76,7 @@
 			'windows nt 6.1'		=> array('Windows', '7'),
 			'windows nt 6.2'		=> array('Windows', '8'),
 			'windows nt 6.3'		=> array('Windows', '8.1'),
+			'windows nt 10.0'		=> array('Windows', '10'),
 			'android'			=> array('Android', ''),
 			'linux i686'			=> array('Linux', 'i686'),
 			'linux x86_64'			=> array('Linux', 'x86_64'),
