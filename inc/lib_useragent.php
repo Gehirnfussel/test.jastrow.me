@@ -26,6 +26,7 @@
 		);
 
 		$engines = array(
+			'EdgeHTML',
 			'webkit',
 			'gecko',
 			'trident',
